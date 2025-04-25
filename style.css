@@ -1,0 +1,20 @@
+/* Suvun yleiset värit */
+body {
+    background-color: white; /* white background */
+    color: blue; /* blue color for text */
+    font-family:Arial, Helvetica, sans-serif; /* default font for body */
+}
+
+*/ h1-h5 heading levels, letter spacing 1px */
+h1, h2, h3, h4, h5 {
+    heading
+    letter-spacing: 1px
+    text-align: center;
+}
+h1{
+    text-decoration: underline;
+}
+p{
+    font-family: 'Roboto', sans-serif;
+    text-indent: 1em;
+}

@@ -4,8 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            align-items: : flex-start;
+            gap: 20px;
+            background-color: #f9f9f9;
+            padding: 20px;
+            max-width: :autofill;
+        }
+
+        img{
+            width:150px;
+            height:auto;
+        }
+
+        p{
+            margin: 0;
+            line-height: 1.5;
+        }
+    </style>
 </head>
-<body>
+<body style="background-image: url(images/tealbk.jpg);">
     <h2> Tehtävä 1 ja Tehtävä 2.</h2>
 
     <img src="https://www.free-graphics.com/clipart/Animals/Birds/bald_eagle.jpg">
@@ -22,23 +42,62 @@
             </tr>
         </table>
     <h3>Kuva tekstin keskellä</h3>
-        <table>
-            <tr>
-                <td>Kuva tekstin<img src="images/bald_eagle.jpg" alt="kuva" width="100px"> keskellä</td>
-            </tr>
-        </table>
+        <div align="center">
+            <p>Kuva tekstin<img src="images/bald_eagle.jpg" alt="kuva" width="100px"> keskellä</p>
+        </div>
     <h3>Kuva tekstin oikealla puolella</h3>
-        <table>
+        <table style="margin-left: auto;">
             <tr>
                 <td>Kuva tekstin oikealla puolella</td>
-                <img src="images/bald_eagle.jpg" alt="kuva" width="100px">
+                <td><img src="images/bald_eagle.jpg" alt="kuva" width="100px"></td>
             </tr>
         </table>
+    <h3>Kuvan alalaita tekstin alalaidan kanssa samalla tasolla</h3>
+        <table>
+            <tr valign="bottom"> <!-- valign="bottom" can move the text to do bottom, top to move top-->
+                <td>Kuvan alalaita tekstin alalaidan kanssa samalla tasolla</td>
+                <td><img src="images/bald_eagle.jpg" alt="kuva" width="100px"></td>
+            </tr>
+        </table>
+    <h3>Kuvan ylälaita tekstin ylälaidan kanssa samalla tasolla</h3>
+        <table>
+            <tr valign="top">
+                <td>Kuvan ylälaita tekstin ylälaidan kanssa samalla tasolla</td>
+                <td><img src="images/bald_eagle.jpg" alt="kuva" width="100px"></td>
+            </tr>        
+        </table>
+<h2> Tehtävä 4 </h2>
+    <h3>Lisää edelliselle sivulle jokin taustakuva esimerkiksi osoitteesta http://www.free-graphics.com/ ja backgrounds. Kopioi ensiksi haluamasi kuva omaan kansioosi ja käytä kopiota taustakuvana.</h3>
 
-    <h3>Kuva keskellä tekstin kansaa</h3>
-    <div align="center">
-        <p> <img src="images/bald_eagle.jpg" alt="kuva" width="100" </p>
-        <p> Tämä on tksti kuvan oikealla puolella. </p>
+    <div style="background-image: url(images/bakground.jpg);">
+        <p>
+        cherry grey background used for page <br>
+        the bround applies just to this area <br>
+        meanwhile the main page will have something else <br>
+        </p>
     </div>
+
+<h2> Tehtävä 5</h2>
+    <p> <a href="https://www.free-graphics.com/design_sets/teal/1.shtml" target="_blank"> Link to the background image</a> </p>
+
+<h2> Tehtävä 6</h2>
+    <div class="container">
+        <img src="images/tealbk.jpg" alt="teal background"
+        <p>
+            Tässä sijaitsee useampi rivinen kappale
+            tekstiä. Kirjoita esimerkiksi jotain kuvaan liittyvää teksitä useampi rivi.            
+        </p>
+    </div>
+
+<h2> Tehtävä 7</h2>
+    <img src="images/bald_eagle.jpg" alt="bird" usemap="#mymap">
+
+    <map name="mymap">
+        <area shape="rect"
+            coords="34,44,270,350"
+            href="https://www.google.com"
+            target="_blank">
+            go to target location
+    </map>
 </body>
 </html>
